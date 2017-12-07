@@ -1,0 +1,8 @@
+[root@cnode5 installer]# docker ps
+CONTAINER ID        IMAGE                     COMMAND                  CREATED             STATUS              PORTS                                NAMES
+8d2f34f9d67b        ansible/awx_task:latest   "/tini -- /bin/sh -c "   13 minutes ago      Up 13 minutes       8052/tcp                             awx_task
+d4f08ecae287        ansible/awx_web:latest    "/tini -- /bin/sh -c "   14 minutes ago      Up 14 minutes       0.0.0.0:80->8052/tcp                 awx_web
+5fe2364474bb        memcached:alpine          "docker-entrypoint.sh"   18 minutes ago      Up 18 minutes       11211/tcp                            memcached
+2fc042e564f0        rabbitmq:3                "docker-entrypoint.sh"   19 minutes ago      Up 19 minutes       4369/tcp, 5671-5672/tcp, 25672/tcp   rabbitmq
+08e9ee86c33f        postgres:9.6              "docker-entrypoint.sh"   19 minutes ago      Up 19 minutes       5432/tcp                             postgres
+
